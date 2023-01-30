@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import { HelmetProvider } from 'react-helmet-async';
 
 import Popup from './Popup';
 
@@ -11,6 +12,8 @@ const container = document.getElementById('root')!;
 
 ReactDOM.createRoot(container).render(
   <React.StrictMode>
-    <Popup />
+    <HelmetProvider>
+      <Popup />
+    </HelmetProvider>
   </React.StrictMode>,
 );

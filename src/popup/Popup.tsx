@@ -1,12 +1,11 @@
-import { useCallback, useEffect, useRef, useState } from 'react';
-import { Helmet } from 'react-helmet';
+import { useCallback, useEffect, useState } from 'react';
+import { Helmet } from 'react-helmet-async';
 import classNames from 'classnames';
 import jsQR from 'jsqr';
 
 import { optionsStorage } from '../logic/storage';
 
 export default function Popup() {
-  const captured = useRef(false);
   const [gettingDisplayMedia, setGettingDisplayMedia] = useState(false);
 
   const [message, setMessage] = useState<string | null>(null);
@@ -51,7 +50,6 @@ export default function Popup() {
   useEffect(() => {
     async function capture() {
       try {
-        setGettingDisplayMedia(true);
         const stream = await navigator.mediaDevices.getDisplayMedia({
           audio: false,
           video: {
@@ -72,11 +70,14 @@ export default function Popup() {
         setGettingDisplayMedia(false);
       }
     }
-    if (!captured.current) {
-      captured.current = true;
+    if (gettingDisplayMedia) {
       capture();
     }
-  }, [loadQr]);
+  }, [gettingDisplayMedia, loadQr]);
+
+  useEffect(() => {
+    setGettingDisplayMedia(true);
+  }, []);
 
   return (
     <>
