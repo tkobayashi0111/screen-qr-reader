@@ -1,7 +1,11 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+import { crx } from '@crxjs/vite-plugin';
+import ViteYaml from '@modyfi/vite-plugin-yaml';
+import react from '@vitejs/plugin-react';
+import UnoCSS from 'unocss/vite';
+import { defineConfig } from 'vite';
 
-// https://vitejs.dev/config/
+import manifest from './src/manifest';
+
 export default defineConfig({
-  plugins: [react()]
-})
+  plugins: [ViteYaml(), react(), UnoCSS(), crx({ manifest })],
+});

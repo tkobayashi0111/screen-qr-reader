@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="512"
+   height="512"
+   viewBox="0 0 135.46666 135.46667"
+   version="1.1"
+   id="svg5"
+   xml:space="preserve"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"><defs
+     id="defs2" /><g
+     id="layer4"><rect
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.147971;stroke-dasharray:none;stroke-opacity:1"
+       id="rect8115"
+       width="127"
+       height="127"
+       x="4.2333331"
+       y="4.2333331" /></g><g
+     id="layer2"><path
+       d="m 82.314818,79.257524 c -3.372703,0 -6.114819,2.742116 -6.114819,6.114819 v 27.516687 c 0,3.37271 2.742116,6.11481 6.114819,6.11481 h 16.815745 l -1.022321,3.05741 h -6.621201 c -1.691129,0 -3.057404,1.36627 -3.057404,3.05741 0,1.69113 1.366275,3.05741 3.057404,3.05741 h 24.459269 c 1.69112,0 3.0574,-1.36628 3.0574,-3.05741 0,-1.69114 -1.36628,-3.05741 -3.0574,-3.05741 h -6.6212 l -1.02232,-3.05741 h 16.81573 c 3.37271,0 6.11481,-2.7421 6.11481,-6.11481 V 85.372343 c 0,-3.372703 -2.7421,-6.114819 -6.11481,-6.114819 z m 42.803702,6.114819 V 106.77421 H 82.314818 V 85.372343 Z"
+       id="path5874"
+       style="display:inline;fill:#ff6f00;fill-opacity:1;stroke-width:0.0955147;stroke-dasharray:none" /><path
+       id="path8987"
+       style="opacity:1;fill:#33691e;fill-opacity:1;stroke-width:0.114429"
+       d="m 21.166666,93.133333 h 21.16667 V 114.3 H 21.166666 Z M 4.2333333,76.199999 V 131.23334 H 59.266666 V 76.199999 Z M 12.7,84.666665 H 50.799996 V 122.76666 H 12.7 Z" /><path
+       id="path8984"
+       style="opacity:1;fill:#33691e;fill-opacity:1;stroke-width:0.114429"
+       d="M 93.133333,21.166668 H 114.3 V 42.333336 H 93.133333 Z M 76.199999,4.2333333 V 59.266671 H 131.23333 V 4.2333333 Z M 84.666667,12.7 H 122.76666 V 50.800005 H 84.666667 Z" /><path
+       id="rect8980"
+       style="opacity:1;fill:#33691e;fill-opacity:1;stroke-width:0.114429"
+       d="M 21.166665,21.166666 H 42.333331 V 42.333332 H 21.166665 Z M 4.2333333,4.2333333 V 59.266665 H 59.266666 V 4.2333333 Z M 12.7,12.699999 h 38.099999 v 38.1 H 12.7 Z" /></g></svg>
