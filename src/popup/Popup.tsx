@@ -6,7 +6,7 @@ import jsQR from 'jsqr';
 import { optionsStorage } from '../logic/storage';
 
 export default function Popup() {
-  const [gettingDisplayMedia, setGettingDisplayMedia] = useState(false);
+  const [gotDisplayMedia, setGotDisplayMedia] = useState(false);
 
   const [message, setMessage] = useState<string | null>(null);
   const [link, setLink] = useState<string | null>(null);
@@ -67,17 +67,12 @@ export default function Popup() {
       } catch {
         window.close();
       } finally {
-        setGettingDisplayMedia(false);
+        setGotDisplayMedia(true);
       }
     }
-    if (gettingDisplayMedia) {
-      capture();
-    }
-  }, [gettingDisplayMedia, loadQr]);
-
-  useEffect(() => {
-    setGettingDisplayMedia(true);
-  }, []);
+    // HACK: prevent selector is displayed out of window on mac.
+    setTimeout(() => capture(), 100);
+  }, [loadQr]);
 
   return (
     <>
@@ -92,7 +87,7 @@ export default function Popup() {
           'py-4',
           'px-9',
           'text-base',
-          gettingDisplayMedia && ['w-[800px]', 'h-[600px]'],
+          !gotDisplayMedia && ['w-[800px]', 'h-[600px]'],
         )}
       >
         {message && <div className="whitespace-nowrap">{message}</div>}

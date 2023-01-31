@@ -2,7 +2,7 @@
   "name": "screen-qr-reader",
   "displayName": "Screen QR Reader",
   "private": true,
-  "version": "0.1.1",
+  "version": "0.1.2",
   "scripts": {
     "dev": "run-s clean && vite",
     "build": "run-s clean && tsc && vite build && jszip-cli add dist/* -o ./extension.zip",
